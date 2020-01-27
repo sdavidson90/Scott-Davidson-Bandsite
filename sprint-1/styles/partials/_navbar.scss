@@ -1,6 +1,6 @@
 .header__nav {
     font-family: 'avenir-regular';
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: $color-black;
     color: $color-silver;
@@ -32,6 +32,9 @@
             text-decoration: none;
             display: block;
             padding-bottom: 0.44rem;
+            &:hover {
+                border-bottom: 0.4125rem solid $color-white;
+            }
             }
         }
 
@@ -39,17 +42,11 @@
             color: $color-white;
             border-bottom: 0.4125rem solid $color-white;
         }
-
-        &-item-link:hover {
-            border-bottom: 0.4125rem solid $color-white;
-        }
     }
 }
 
 @include medium {
     .header__nav {
-        width: 100vw;
-        height: 80px;
         flex-direction: row;
         &-logo-container {
             margin-top: 0px;
@@ -87,9 +84,6 @@
 
 @include large {
     .header__nav {
-        width: 100vw;
-        height: 80px;
-        flex-direction: row;
         &-logo-container {
             margin-top: 0px;
         }
@@ -109,7 +103,6 @@
                 &-link {
                     border-bottom: 0.4125rem solid transparent
                 }
-;
             }
         }
     }

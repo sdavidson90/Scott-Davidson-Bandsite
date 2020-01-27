@@ -1,5 +1,5 @@
 .about {
-   margin: 0rem 1rem 2.5rem 1rem;
+   padding: 0rem 1rem 2.5rem 1rem;
    color: $color-black;
    background-color: $color-white;
 
@@ -10,7 +10,7 @@
         &-title {
             font-family: 'avenir-bold';
             font-size: 1.5rem;
-            margin-top: 2rem;
+            padding-top: 2rem;
             line-height: 2rem;
         }
         &-image {
@@ -49,7 +49,7 @@
 
 @include medium {
     .about {
-        margin: 0rem 1.5rem 1.5rem 1.5rem;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
 
         &__intro {
             &-title {
@@ -90,7 +90,7 @@
 
 @include large {
     .about {
-        margin: 0 17rem 3rem 17rem;
+        padding: 0 17rem 3rem 17rem;
         &__intro {
             &-title {
                     margin: 3rem 0 0 -5.75rem;
