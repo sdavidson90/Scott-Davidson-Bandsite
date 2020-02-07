@@ -7,10 +7,8 @@
     font-size: 0.8125rem;
     margin-bottom: 2.5rem;
     &__title {
-        font-family: 'avenir-bold';
-        font-size: 1.5rem;
+        @include mobile-header;
         color: $color-black;
-        line-height: 2rem;
         padding: 2rem 0 2.5rem 0;
     }
 
@@ -37,9 +35,7 @@
                 border-radius: 0.25rem;
                 border: 1.5px solid $color-mercury;
                 padding: 0.625rem;
-                font-family: 'avenir-regular';
-                font-size: 0.8125rem;
-                line-height: 1.125rem;
+                @include mobile-para;
                 margin-bottom: 1.5rem;
                 resize: none;
             }
@@ -50,9 +46,7 @@
                 border: 1.5px solid $color-mercury;
                 padding: 0.625rem;
                 padding-bottom: 3rem;
-                font-family: 'avenir-regular';
-                font-size: 0.8125rem;
-                line-height: 1.125rem;
+                @include mobile-para;
                 margin-bottom: 1.5rem;
                 resize: none; 
             }

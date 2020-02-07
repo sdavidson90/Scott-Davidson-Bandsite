@@ -1,8 +1,6 @@
 .hero {
     background-image: url(../assets/hero/showsheroone.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background;
     height: 29.5rem;
     color: $color-white;
     display: flex;

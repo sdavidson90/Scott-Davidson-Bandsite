@@ -33,6 +33,9 @@ h3 {
 /* media query for mobile*/
 /* media query for tablet*/
 /* media query for high pixel density desktops*/
+/*Mobile font*/
+/*Desktop/tablet font*/
+/*background image*/
 .header__nav {
   font-family: 'avenir-regular';
   width: 100%;
@@ -516,8 +519,9 @@ h3 {
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 0 1.5rem;
+    font-family: 'avenir-regular';
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
   }
   .footer__main {
     display: -webkit-box;
@@ -531,12 +535,13 @@ h3 {
             align-items: center;
   }
   .footer__title {
+    font-family: 'avenir-bold';
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding: 3rem 0 3.5rem 0;
   }
   .footer__social {
-    padding: 0 8rem 0 0;
+    padding-right: 8rem;
   }
   .footer__social-link {
     margin-right: 2rem;

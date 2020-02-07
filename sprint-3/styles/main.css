@@ -30,6 +30,9 @@ body {
 /* media query for mobile*/
 /* media query for tablet*/
 /* media query for high pixel density desktops*/
+/*Mobile font*/
+/*Desktop/tablet font*/
+/*background image*/
 .header__nav {
   font-family: 'avenir-regular';
   width: 100%;
@@ -212,10 +215,10 @@ main {
 
 .hero__title {
   font-family: 'avenir-bold';
-  color: #FFFFFF;
   font-size: 1.5rem;
-  width: 13rem;
   line-height: 2rem;
+  color: #FFFFFF;
+  width: 13rem;
   padding-left: 1rem;
 }
 
@@ -224,6 +227,7 @@ main {
     height: 25rem;
   }
   .hero__title {
+    font-family: 'avenir-bold';
     font-size: 3.75rem;
     line-height: 4.25rem;
     width: 32rem;
@@ -262,8 +266,8 @@ main {
 .about__intro-title {
   font-family: 'avenir-bold';
   font-size: 1.5rem;
-  padding-top: 2rem;
   line-height: 2rem;
+  padding-top: 2rem;
 }
 
 .about__intro-image {
@@ -307,6 +311,7 @@ main {
     padding: 0rem 1.5rem 1.5rem 1.5rem;
   }
   .about__intro-title {
+    font-family: 'avenir-bold';
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -314,6 +319,7 @@ main {
     height: 47.136vw;
   }
   .about__intro-quote {
+    font-family: 'avenir-bold';
     font-size: 1.5rem;
     line-height: 2rem;
     width: unset;
@@ -323,6 +329,7 @@ main {
     line-height: 1.5rem;
   }
   .about__bio-names {
+    font-family: 'avenir-bold';
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -335,6 +342,7 @@ main {
             justify-content: space-evenly;
   }
   .about__bio-main {
+    font-family: 'avenir-regular';
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
@@ -413,6 +421,7 @@ main {
     padding: 0 1.5rem;
   }
   .gallery__title {
+    font-family: 'avenir-bold';
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding-bottom: 2rem;
@@ -466,8 +475,8 @@ main {
 .comments__title {
   font-family: 'avenir-bold';
   font-size: 1.5rem;
-  color: #323232;
   line-height: 2rem;
+  color: #323232;
   padding: 2rem 0 2.5rem 0;
 }
 
@@ -718,8 +727,9 @@ main {
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 0 1.5rem;
+    font-family: 'avenir-regular';
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
   }
   .footer__main {
     display: -webkit-box;
@@ -733,12 +743,13 @@ main {
             align-items: center;
   }
   .footer__title {
+    font-family: 'avenir-bold';
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding: 3rem 0 3.5rem 0;
   }
   .footer__social {
-    padding: 0 8rem 0 0;
+    padding-right: 8rem;
   }
   .footer__social-link {
     margin-right: 2rem;

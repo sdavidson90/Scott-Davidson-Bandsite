@@ -8,10 +8,8 @@
         flex-direction: column;
         align-items: left;
         &-title {
-            font-family: 'avenir-bold';
-            font-size: 1.5rem;
+            @include mobile-header;
             padding-top: 2rem;
-            line-height: 2rem;
         }
         &-image {
             height: 45.313vw;
@@ -27,9 +25,7 @@
             width: 85%;
             &-person {
                 padding-bottom: 2.5rem;
-                font-family: 'avenir-demi';
-                font-size: 0.875rem;
-                line-height: 1.375rem;
+                @include mobile-sub;
             }
         }
     }
@@ -40,9 +36,7 @@
             line-height: 1.375rem;
     }
     &__bio-main {
-            font-family: 'avenir-regular';
-            font-size: 0.8125rem;
-            line-height: 1.125rem;
+            @include mobile-para;
             padding-top: 1.5rem;
     }
 }
@@ -53,15 +47,13 @@
 
         &__intro {
             &-title {
-                font-size: 2.25rem;
-                line-height: 2.75rem;
+                @include h1-header;
             }
             &-image {
                 height: 47.136vw;
             }
             &-quote {
-                font-size: 1.5rem;
-                line-height: 2rem;
+                @include h2-header;
                 width: unset;
                 &-person {
                     font-size: 1rem;
@@ -70,8 +62,7 @@
             }
         }
         &__bio-names {
-            font-size: 1.5rem;
-            line-height: 2rem;
+            @include h2-header;
         }
         &__bio-container-main {
             display: flex;
@@ -79,8 +70,7 @@
         }
 
         &__bio-main {
-            font-size: 0.875rem;
-            line-height: 1.375rem;
+            @include h4-para;
         }
     }
     #main-bot {

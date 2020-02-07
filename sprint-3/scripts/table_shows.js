@@ -1,6 +1,7 @@
+//CREATING A FUNCTION USING DOM TO POST ALL THE DATA FROM HEROKU SHOWS DATABASE
 function displayShows(arr) {
     const shows = document.querySelector(".shows")
-
+    //CREATING ELEMENTS USING DOM
     const showsTitle = document.createElement("h2");
     showsTitle.classList.add("shows__title");
     showsTitle.innerText = "Shows";
@@ -86,9 +87,10 @@ function displayShows(arr) {
         showsParent.appendChild(buyTickets);
     }
 }
-
-const showDates = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=scott")
+//GETTING THE SHOW DATA TO POST ON SITE USING DOM
+const showDates = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=5515415415415415411541541")
 showDates.then(response => {
+    //CALLING THE FUNCTION TO CREATE THE DOM ELEMENTS AND FILL IT WITH THE DATA FROM THE DATA BASE
     displayShows(response.data);
 });
 showDates.catch(error => {
