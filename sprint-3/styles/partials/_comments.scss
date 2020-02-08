@@ -22,6 +22,9 @@
             border-radius: 2rem;
             margin-top: 1rem;
             margin-right: 1rem;
+            background-image: url(../assets/Images/Mohan-muruge.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &-info-form {
             display: flex;
@@ -83,11 +86,22 @@
         align-items: center;
         padding: 1.5rem 0;
         &-image {
-            height: 48px;
-            width: 48px;
+            height: 3rem;
+            width: 3rem;
             background-color: $color-mercury;
             border-radius: 2rem;
             align-self: flex-start;
+        }
+        &-remove {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 2rem;
+            background-image: url("../assets/Icons/PNG/remove\ button.png");
+            @include background;
+            margin-left: 5px;
+            &:focus {
+                outline-width: 0;
+            }
         }
         &-name {
             font-size: 0.875rem;
@@ -109,7 +123,7 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         width: 72vw;
         // padding-top: 1.5rem;
     }
@@ -149,7 +163,7 @@
             }
             &-image {
                 margin-right: 1rem;
-                width: 3.4375rem;
+                min-width: 3rem;
             }
             &-comment {
                 width: 25rem;
@@ -168,7 +182,7 @@
             padding-left: 10.25rem;
         }
         &__new-image {
-            width: 6.3125rem;
+            min-width: 3rem;
         }
     }
 }

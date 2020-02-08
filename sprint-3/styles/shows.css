@@ -548,6 +548,8 @@ h3 {
   }
   .footer__logo {
     display: inherit;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
     height: 1.5rem;
     width: 7.5rem;
   }
