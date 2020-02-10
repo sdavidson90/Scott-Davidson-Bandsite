@@ -1,7 +1,8 @@
+/*MOBILE SIZING*/
 .header__nav {
     font-family: 'avenir-regular';
     width: 100%;
-    height: 80px;
+    height: 5rem;
     background-color: $color-black;
     color: $color-silver;
     display: flex;
@@ -46,6 +47,7 @@
     }
 }
 
+/*TABLET SIZING*/
 @include medium {
     .header__nav {
         flex-direction: row;
@@ -83,6 +85,7 @@
     }
 }
 
+/*DESKTOP SIZING*/
 @include large {
     .header__nav {
         &-logo-container {

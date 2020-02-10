@@ -2,6 +2,7 @@ main {
     padding: unset;
 }
 
+/*MOBILE SIZING*/
 .hero {
     height: 11.4375rem;
     width: 100%;
@@ -25,6 +26,7 @@ main {
     }
 }
 
+/*TABLET SIZING*/
 @include medium {
     .hero {
         height: 25rem;
@@ -36,6 +38,7 @@ main {
     }
 }
 
+/*DESKTOP SIZING*/
 @include large {
     .hero {
         height: 41.875‬rem;

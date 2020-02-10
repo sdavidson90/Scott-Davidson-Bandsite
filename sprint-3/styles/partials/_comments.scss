@@ -1,3 +1,4 @@
+/*MOBILE SIZING*/
 .comments {
     background-color: $color-white;
     padding: 0 1rem;
@@ -82,53 +83,41 @@
         color: $color-black;
         border-bottom: 1px solid $color-mercury;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 1.5rem 0;
+        max-width: 33rem;
+        margin: 0 auto;
         &-image {
             height: 3rem;
-            width: 3rem;
+            min-width: 3rem;
             background-color: $color-mercury;
             border-radius: 2rem;
             align-self: flex-start;
-        }
-        &-remove {
-            width: 1rem;
-            height: 1rem;
-            border-radius: 2rem;
-            background-image: url("../assets/Icons/PNG/remove\ button.png");
-            @include background;
-            margin-left: 5px;
-            &:focus {
-                outline-width: 0;
-            }
+            margin-right: 12px;
         }
         &-name {
             font-size: 0.875rem;
             margin-right: auto;
             padding-bottom: 1rem;
             width: 50vw;
-            // width: 150px;
         }
         &-time {
             font-family: 'avenir-regular';
             color: $color-silver;
-            // width: 75px;
         }
         &-comment {
             font-family: 'avenir-regular';
-            // width: 250px;
         }
     }
     &__container {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: flex-end;
         width: 72vw;
-        // padding-top: 1.5rem;
     }
 }
 
+/*MOBILE SIZING*/
 @include medium {
     .comments {
         &__title {
@@ -175,6 +164,7 @@
     }
 }
 
+/*DESKTOP SIZING*/
 @include large {
     .comments {
 

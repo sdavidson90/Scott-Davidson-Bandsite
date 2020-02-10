@@ -1,3 +1,4 @@
+/*MOBILE SIZING*/
 .footer {
     background-color: $color-black;
     color: $color-white;
@@ -35,6 +36,7 @@
     }
 }
 
+/*TABLET SIZING*/
 @include medium {
     .footer {
         padding: 0 1.5rem;
@@ -49,19 +51,21 @@
             padding: 3rem 0 3.5rem 0;
         }
         &__social {
-            padding-right: 8rem;
+            padding-bottom: unset;
+            margin-right: auto;
+            padding-left: 4.25rem;
             &-link {
-                margin-right: 2rem;
+                margin-right: 1.5rem;
             }
         }
         &__logo {
             display: inherit;
-            justify-self: self-start;
+            margin-left: auto;
             height: 1.5rem;
             width: 7.5rem;
         }
         &__contact {
-            padding-right: 1.875rem;
+            padding-right: 2rem;
             &-name {
                 font-size: 1rem;
                 line-height: 1.5rem;
@@ -81,14 +85,18 @@
     }
 }
 
+/*DESKTOP SIZING*/
 @include large {
     .footer {
         padding: 0 11.25rem;
         &__social {
-            padding-right: 30rem;
+            padding-left: 3.25rem;
         }
         &__contact {
             padding-right: 3.25rem;
+            &-container {
+                justify-content: left;
+            }
         }
     }
 }
