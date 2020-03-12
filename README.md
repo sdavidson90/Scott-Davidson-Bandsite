@@ -13,4 +13,4 @@ HTML/CSS(Sass)/JavaScript
 View in live-server
 
 ## Next Steps
--delete comment functionality
+-Delete comment functionality
