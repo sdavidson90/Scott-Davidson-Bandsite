@@ -416,9 +416,12 @@ main {
 .gallery__images-item {
   height: 50.625vw;
   width: 100%;
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
+  border-radius: 6px;
 }
 
 .gallery__images-item:hover {
@@ -454,7 +457,7 @@ main {
   .gallery__images-item {
     height: 16.40625vw;
     width: calc(33% - 12px);
-    padding: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
   }
 }
 
@@ -478,7 +481,7 @@ main {
 .comments {
   background-color: #FFFFFF;
   padding: 0 1rem;
-  font-family: 'avenir-demi';
+  font-family: "avenir-demi";
   color: #AFAFAF;
   line-height: 1.125rem;
   font-size: 0.8125rem;
@@ -564,7 +567,7 @@ main {
 .comments__input-info-form-submit {
   background-color: #323232;
   color: #FFFFFF;
-  font-family: 'avenir-demi';
+  font-family: "avenir-demi";
   height: 3rem;
   border-radius: 4px;
   border: none;
@@ -579,7 +582,7 @@ main {
   background-color: black;
 }
 
-.comments__new {
+.comments .comments__new {
   width: 100%;
   color: #323232;
   border-bottom: 1px solid #E1E1E1;
@@ -597,7 +600,7 @@ main {
   margin: 0 auto;
 }
 
-.comments__new-image {
+.comments .comments__new-image {
   height: 3rem;
   min-width: 3rem;
   background-color: #E1E1E1;
@@ -607,20 +610,20 @@ main {
   margin-right: 12px;
 }
 
-.comments__new-name {
+.comments .comments__new-name {
   font-size: 0.875rem;
   margin-right: auto;
   padding-bottom: 1rem;
   width: 50vw;
 }
 
-.comments__new-time {
-  font-family: 'avenir-regular';
+.comments .comments__new-time {
+  font-family: "avenir-regular";
   color: #AFAFAF;
 }
 
-.comments__new-comment {
-  font-family: 'avenir-regular';
+.comments .comments__new-comment {
+  font-family: "avenir-regular";
 }
 
 .comments__container {
@@ -640,6 +643,10 @@ main {
     padding: 3rem 0 3.5rem 0.5rem;
   }
   .comments__input {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -671,7 +678,7 @@ main {
   .comments__new-name {
     margin: 0;
     padding-right: 1rem;
-    width: unset;
+    max-width: 350px;
   }
   .comments__new-image {
     margin-right: 1rem;
