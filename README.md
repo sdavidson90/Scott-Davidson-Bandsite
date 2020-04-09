@@ -2,7 +2,7 @@
 BrainStation Bandsite
 HTML/CSS(Sass)/JavaScript
 
-![image](Scott-Davidson-Bandsite/images/heross.png)
+![image](images/heross.png)
 
 ## Features
 -Pulling data from Heroku using Axios
