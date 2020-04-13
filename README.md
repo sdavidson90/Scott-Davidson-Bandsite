@@ -1,6 +1,6 @@
 # Scott-Davidson-Bandsite
 BrainStation Bandsite
-HTML/CSS(Sass)/JavaScript
+HTML/CSS(Sass)/JavaScript 
 
 
 ## Features
